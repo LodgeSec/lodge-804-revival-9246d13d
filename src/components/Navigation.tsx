@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import chiPsiSeal from "@/assets/chi-psi-seal.png";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -24,9 +25,11 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-              <span className="text-2xl font-bold text-primary">ΧΨ</span>
-            </div>
+            <img 
+              src={chiPsiSeal} 
+              alt="Chi Psi Logo" 
+              className="w-12 h-12 object-contain transition-transform group-hover:scale-105"
+            />
             <span className="font-serif text-xl font-semibold text-foreground">
               The Lodge
             </span>
