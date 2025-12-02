@@ -12,7 +12,7 @@ const navLinks = [
   { href: "/officers", label: "Officers" },
   { href: "/alumni", label: "Alumni" },
   { href: "/history", label: "History" },
-  { href: "/peer-mentorship", label: "Peer Mentorship" },
+  { href: "https://brother.chipsi.org/mentorship/", label: "Peer Mentorship", external: true },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -38,13 +38,25 @@ export const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/5 rounded-lg transition-all"
-              >
-                {link.label}
-              </Link>
+              link.external || String(link.href).startsWith("http") ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/5 rounded-lg transition-all"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/5 rounded-lg transition-all"
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
           </div>
 
@@ -68,14 +80,27 @@ export const Navigation = () => {
         >
           <div className="flex flex-col gap-2 pt-2">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className="px-4 py-3 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/5 rounded-lg transition-all"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </Link>
+              link.external || String(link.href).startsWith("http") ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-3 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/5 rounded-lg transition-all"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="px-4 py-3 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/5 rounded-lg transition-all"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
           </div>
         </div>

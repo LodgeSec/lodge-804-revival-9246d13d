@@ -36,7 +36,7 @@ export const HeroSection = () => {
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary/10 font-semibold px-8"
               >
-                <Link to="/peer-mentorship">Peer Mentorship</Link>
+                <a href="https://brother.chipsi.org/mentorship/" target="_blank" rel="noopener noreferrer">Peer Mentorship</a>
               </Button>
             </div>
           </div>
