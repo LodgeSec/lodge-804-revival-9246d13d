@@ -7,12 +7,39 @@ const PeerMentorship = () => {
       <Navigation />
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold text-primary mb-8">Peer Mentorship</h1>
-          <div className="prose prose-lg max-w-4xl">
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              Our peer mentorship program connects younger brothers with experienced members, 
-              fostering personal growth, academic success, and professional development.
+          <h1 className="text-5xl font-bold text-primary mb-6">
+            Alpha Xi Peer Mentorship Program
+          </h1>
+          <div className="prose prose-lg max-w-4xl mb-8">
+            <p className="text-foreground text-lg leading-relaxed mb-4">
+              Become a mentor and connect with active brothers. Mentors meet monthly
+              (virtual or in-person) to provide career advice and guidance.
             </p>
+            <p className="text-foreground text-lg leading-relaxed">
+              If you have questions, contact Joseph Katz at{" "}
+              <a
+                href="mailto:katzlodge@gmail.com"
+                className="text-primary hover:text-accent underline"
+              >
+                katzlodge@gmail.com
+              </a>
+              .
+            </p>
+          </div>
+
+          <div className="w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg border border-border">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSckBnZ9pj6M4RFTQQVySHtLYGU6hWyca30ylHTh2GWnuNTrJg/viewform?embedded=true"
+              width="100%"
+              height="800"
+              frameBorder="0"
+              marginHeight={0}
+              marginWidth={0}
+              title="Peer Mentor Form"
+              className="w-full"
+            >
+              Loading…
+            </iframe>
           </div>
         </div>
       </main>
