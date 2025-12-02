@@ -7,16 +7,16 @@ const Alumni = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main className="pt-32 pb-20">
-        <div className="container mx-auto px-4">
+      <main className="pt-32 pb-20 mx-auto text-center">
+        <div className="container mx-auto px-4 mx-auto text-center">
           <h1 className="text-5xl font-bold text-primary mb-4">Alumni</h1>
-          <p className="text-muted-foreground text-lg mb-8 max-w-4xl">
+          <p className="text-muted-foreground text-lg mb-8 max-w-4xl mx-auto text-center">
             Our alumni association and advisory board support the chapter through
             mentorship, events, and stewardship. Contact the groups below for alumni
             relations, donations, or to get involved.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto justify-center">
             <Card className="border-border hover:border-primary/50 transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-primary">
@@ -46,7 +46,7 @@ const Alumni = () => {
                   href="mailto:secretary@alphaxialumni.org"
                   className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors mt-4"
                 >
-                  <Mail className="h-4 w-4" />
+                  <Mail className="h-4 w-4 transition-transform duration-300 hover:animate-spin" />
                   Contact the Alumni Association
                 </a>
               </CardContent>
@@ -81,7 +81,7 @@ const Alumni = () => {
                   href="mailto:aleksdimoski890@gmail.com"
                   className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors mt-4"
                 >
-                  <Mail className="h-4 w-4" />
+                  <Mail className="h-4 w-4 transition-transform duration-300 hover:animate-spin" />
                   Contact the Advisory Board
                 </a>
               </CardContent>
