@@ -6,10 +6,10 @@ const History = () => {
     <div className="min-h-screen">
       <Navigation />
       <main className="pt-32 pb-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 mx-auto text-center">
           <h1 className="text-5xl font-bold text-primary mb-8">History</h1>
           
-          <div className="prose prose-lg max-w-4xl space-y-6">
+          <div className="prose prose-lg max-w-4xl space-y-6 mx-auto text-center">
             <p className="text-foreground text-lg leading-relaxed">
               Alpha Xi is the oldest continuously active fraternity at Stevens Institute of Technology and has long been associated with 804 Castle Point Terrace (The Lodge). Since its founding in the late 19th century, the chapter has been a home for generations of students — promoting academic support, leadership development, and community service. Over the decades Alpha Xi has adapted to changing campus life while maintaining traditions that connect current members with alumni and the broader Stevens community.
             </p>

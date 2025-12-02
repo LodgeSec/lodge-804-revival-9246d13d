@@ -8,9 +8,9 @@ const About = () => {
       <Navigation />
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold text-primary mb-8">About Us</h1>
+          <h1 className="text-5xl font-bold text-primary mb-8 mx-auto text-center">About Us</h1>
           
-          <div className="prose prose-lg max-w-4xl space-y-4">
+          <div className="prose prose-lg max-w-4xl space-y-4 mx-auto text-center">
             <p className="text-foreground text-lg leading-relaxed">
               Chi Psi at Stevens Institute of Technology is a community where brotherhood, scholarship, and character are lived every day. Founded in 1883, the fraternity has built a multigenerational legacy of lifelong bonds and personal growth.
             </p>

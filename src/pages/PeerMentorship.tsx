@@ -6,11 +6,11 @@ const PeerMentorship = () => {
     <div className="min-h-screen">
       <Navigation />
       <main className="pt-32 pb-20">
-        <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold text-primary mb-6">
+        <div className="container mx-auto px-4 flex flex-col items-center">
+          <h1 className="text-5xl font-bold text-primary mb-6 text-center">
             Alpha Xi Peer Mentorship Program
           </h1>
-          <div className="prose prose-lg max-w-4xl mb-8">
+          <div className="prose prose-lg max-w-4xl mb-8 text-center">
             <p className="text-foreground text-lg leading-relaxed mb-4">
               Become a mentor and connect with active brothers. Mentors meet monthly
               (virtual or in-person) to provide career advice and guidance.
