@@ -11,9 +11,13 @@ const Alumni = () => {
         <div className="container mx-auto px-4 mx-auto text-center">
           <h1 className="text-5xl font-bold text-primary mb-4">Alumni</h1>
           <p className="text-muted-foreground text-lg mb-8 max-w-4xl mx-auto text-center">
-            Our alumni association and advisory board support the chapter through
+            Our alumni association and advisory board support the Alpha through
             mentorship, events, and stewardship. Contact the groups below for alumni
             relations, donations, or to get involved.
+             <br />
+             <span className="mt-4 block">
+               Visit the Alpha Xi alumni website: <a href="https://alphaxialumni.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">alphaxialumni.org</a>
+             </span>
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto justify-center">
@@ -49,6 +53,14 @@ const Alumni = () => {
                   <Mail className="h-4 w-4 transition-transform duration-300 hover:animate-spin" />
                   Contact the Alumni Association
                 </a>
+                  <a
+                    href="https://alphaxialumni.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors mt-2"
+                  >
+                    Visit Alumni Website
+                  </a>
               </CardContent>
             </Card>
 
