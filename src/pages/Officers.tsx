@@ -6,7 +6,7 @@ import { Mail } from "lucide-react";
 const officers = [
   {
     number: "#1",
-    name: "Matthew Werner",
+    name: "Michael Zanone",
     title: "President",
     email: "president@lodge804.com",
   },
@@ -18,13 +18,13 @@ const officers = [
   },
   {
     number: "#3",
-    name: "Michael Zanone",
+    name: "Dylan Ohnsorg",
     title: "Secretary",
     email: "secretary@lodge804.com",
   },
   {
     number: "#4",
-    name: "Joseph Welsko",
+    name: "Shane Mitchell",
     title: "Treasurer",
     email: "treasurer@lodge804.com",
   },
