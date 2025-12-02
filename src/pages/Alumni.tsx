@@ -57,7 +57,7 @@ const Alumni = () => {
                     href="https://alphaxialumni.org/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors mt-2"
+                    className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors mt-2 ml-10"
                   >
                     Visit Alumni Website
                   </a>
