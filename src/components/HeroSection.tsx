@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import InstagramFeed from "@/components/InstagramFeed";
 
 export const HeroSection = () => {
   return (
@@ -38,6 +39,12 @@ export const HeroSection = () => {
               >
                 <a href="https://brother.chipsi.org/mentorship/" target="_blank" rel="noopener noreferrer">Peer Mentorship</a>
               </Button>
+            </div>
+            {/* small sneak-peek preview of recent posts so users see images in the initial frame */}
+            <div className="mt-8 -mb-12 relative z-20 flex justify-center">
+              <div className="w-full max-w-3xl px-4">
+                <InstagramFeed />
+              </div>
             </div>
           </div>
         </div>
