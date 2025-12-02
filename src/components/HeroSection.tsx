@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import chiPsiSeal from "@/assets/chi-psi-seal.png";
 
 export const HeroSection = () => {
   return (
@@ -9,7 +8,7 @@ export const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/5" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Text Content */}
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
@@ -17,13 +16,13 @@ export const HeroSection = () => {
                 Alpha Xi of{" "}
                 <span className="text-primary">Chi Psi</span>
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
                 Taking the idea of Brotherhood to heart — Chi Psi develops young men 
                 socially, intellectually, and morally at Stevens Institute of Technology.
               </p>
             </div>
             
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center">
               <Button
                 asChild
                 size="lg"
@@ -39,18 +38,6 @@ export const HeroSection = () => {
               >
                 <Link to="/peer-mentorship">Peer Mentorship</Link>
               </Button>
-            </div>
-          </div>
-
-          {/* Logo */}
-          <div className="flex justify-center lg:justify-end animate-slide-up">
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl" />
-              <img
-                src={chiPsiSeal}
-                alt="Chi Psi Fraternity Seal"
-                className="relative w-80 h-80 md:w-96 md:h-96 object-contain drop-shadow-2xl"
-              />
             </div>
           </div>
         </div>
